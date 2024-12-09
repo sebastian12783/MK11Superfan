@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <title>Sebastian Layout after</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="column1 black center-content">
+      <img
+        src="images/Mortal-Kombat-11-Logo-Vector.svg-.png"
+        class="clickable4"
+        onclick="mkstopsound()"
+      />
+    </div>
+    <div class="column2 dark-grey">
+      <div class="box1 black center-content">
+        <img
+          src="images/scorpion2.png"
+          class="clickable1"
+          onclick="scorpion_audio()"
+        />
+      </div>
+
+      <div class="column3 red">
+        <div class="box3 black center-content">
+          <img
+            src="images/Black_dragon_fight_club.jpg"
+            class="clickable3"
+            onclick="fightclub_audio()"
+          />
+        </div>
+        <div class="box3 blue center-content">
+          <iframe
+            id="video_holder"
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/JACjbPdpnDw?si=7zLprzoBjYHIwdwC"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="box1 black center-content">
+        <img
+          src="images/Subzero2.png"
+          class="clickable2 strech"
+          onclick="subzero_audio()"
+        />
+      </div>
+    </div>
+    <audio
+      src="sounds/Desktop 2024 11 17   17 20 27 02 DVR   Trim.mp3"
+      type="mp3"
+      id="scorpionvoiceline"
+    ></audio>
+    <audio
+      src="sounds/subzeroannounce1 03 DVR   Trim.mp3"
+      type="mp3"
+      id="subzerovoiceline"
+    ></audio>
+    <audio src="sounds/audio.mp3" type="mp3" id="dragonfightclub"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

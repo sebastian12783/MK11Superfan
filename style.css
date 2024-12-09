@@ -1,0 +1,247 @@
+/* Add filters: https://www.w3schools.com/cssref/css3_pr_filter.asp */
+/* Make your own favicon: https://favicon.io/ */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: block;
+  background-color: #141414;
+}
+
+/* build your layout */
+
+.column1 {
+  height: 25%;
+  width: 100%;
+  display: block;
+}
+.column2 {
+  height: 75%;
+  width: 100%;
+  display: flex;
+}
+.column3 {
+  height: 100%;
+  width: 40%;
+  display: block;
+}
+.column4 {
+  height: 25%;
+  width: 100%;
+  display: flex;
+}
+.box1 {
+  height: 100%;
+  width: 30%;
+  display: flex;
+}
+.box2 {
+  height: 100%;
+  width: 75%;
+  display: block;
+}
+.box3 {
+  height: 50%;
+  width: 100%;
+  display: block;
+}
+.box4 {
+  height: 50%;
+  width: 100%;
+  display: block;
+}
+
+.box-button {
+  height: 20%;
+  width: 100%;
+}
+.box5 {
+  height: 10%;
+  width: 10%;
+  display: flex;
+}
+/* control your content */
+img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* add effects on click (UX) */
+.fly-forward {
+  transform: translate(165px, 0);
+  transition: transform 2s ease;
+}
+.translucent {
+  opacity: 0.5;
+}
+.box-button:hover {
+  cursor: pointer;
+}
+
+/* colors */
+.orange {
+  background-color: #f3a903;
+}
+.blue {
+  background-color: #2955dc;
+}
+.black {
+  background-color: #000000;
+}
+.light-grey {
+  background-color: #a9a9a9;
+}
+.dark-grey {
+  background-color: #707070;
+}
+.red {
+  background-color: #ee1a13;
+}
+.white {
+  background-color: #ffffff;
+}
+.green {
+  background-color: #51ff00;
+}
+.purple {
+  background-color: #9c69fa;
+}
+
+/* EFFECTS FOR BUTTON 1 */
+.clickable1 {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.clickable1:hover {
+  cursor: pointer;
+  transform: translateY(-15px); /* Lift up effect */
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3); /* Expanding shadow */
+}
+
+.clickable1:active {
+  transform: translateY(0px); /* Press down effect */
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2); /* Smaller shadow when clicked */
+}
+
+/* EFFECTS FOR BUTTON 2 */
+.clickable2 {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.clickable2:hover {
+  cursor: pointer;
+  transform: translateY(-10px); /* Lift up effect */
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3); /* Expanding shadow */
+}
+
+.clickable2:active {
+  transform: translateY(0px); /* Press down effect */
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2); /* Smaller shadow when clicked */
+}
+
+/* EFFECTS FOR BUTTON 1 */
+.clickable3 {
+  position: relative;
+  padding: 0.1px;
+  border: 2px solid transparent;
+  transition: opacity 0.4s ease, box-shadow 0.4s ease;
+}
+
+.clickable3:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  border: 2px solid #ff00ff; /* Neon pink border */
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.8); /* Pink glow */
+}
+
+.clickable3:active {
+  opacity: 1; /* Reset opacity on click */
+  box-shadow: 0 0 40px rgba(255, 0, 255, 1); /* Stronger glow on click */
+}
+
+.clickable4 {
+  position: relative;
+  padding: 10px;
+  background-color: #000000;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.clickable4:hover {
+  cursor: pointer;
+  animation: glowPulse 1.5s infinite alternate;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.7);
+  border: 2px solid #00ffff; /* Cyan border */
+}
+
+.clickable4:active {
+  box-shadow: 0 0 40px rgba(0, 255, 255, 1);
+  transform: scale(1.05); /* Slightly enlarges on click */
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: block;
+  }
+
+  .column1 {
+    height: 20%;
+    width: 97.5%;
+    display: block;
+  }
+
+  .column2 {
+    height: 80%;
+    width: 100%;
+    display: block;
+  }
+
+  .box1 {
+    height: 20%;
+    width: 100%;
+  }
+  .column3 {
+    height: 60%;
+    width: 100%;
+    display: block;
+  }
+  .box3 {
+    height: 50%;
+    width: 100%;
+    display: block;
+  }
+  .center-content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .clickable4 {
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .clickable4:hover {
+    cursor: pointer;
+    transform: scale(1); /* Slight zoom on hover */
+  }
+
+  .clickable4:active {
+    transform: scale(0.85); /* Shrink element on click */
+    opacity: 0.6; /* Fade out slightly when clicked */
+  }
+}
